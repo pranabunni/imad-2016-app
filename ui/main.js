@@ -1,6 +1,12 @@
 console.log('Loaded!');
 var img=document.getElementById('maddi');
+var marginleft=0;
+function mright()
+{
+    marginleft=marginleft+10;
+  img.style.margiLeft=marginleft+'px';  
+}
 img.onClick=function()
 {
-  img.style.margiLeft='100px';
+  var interval=setInterval(mright,100);
 };
